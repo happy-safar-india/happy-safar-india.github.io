@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Happy Safar India — FAQ</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="scripts.js"></script>
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    /* FAQ accordion styles */
+    .faq-container {
+      max-width: 900px;
+      margin: 0px auto;
+      padding: 20px;
+    }
+    .faq-item {
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .faq-question {
+      background: #0a3d62;
+      color: #fff;
+      padding: 15px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1rem;
+    }
+    .faq-answer {
+      display: none;
+      padding: 15px;
+      background: #f9f9f9;
+      line-height: 1.6;
+    }
+    .faq-question i {
+      transition: transform 0.3s ease;
+    }
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+    .faq-item.active .faq-question i {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.png" alt="Logo" class="brand-logo" />
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
+      <nav id="nav" class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="blog.html">Blog</a>
+        <a class="active" href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== FAQ Section ===== -->
+  <main class="faq-container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>What is Embedded Electronics?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        👉 Embedded Electronics is a learning platform that provides tutorials, projects, e-books, and quizzes 
+        focused on Embedded Systems, IoT, and Electronics for students and professionals.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>What is the Technical IQ Test?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        👉 It is an online quiz based on Embedded Systems, Electronics, and related technical topics,
+        designed to test and improve your knowledge.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>How can I get a certificate?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        👉 You need to take the Technical IQ Test at <a href="iq-test.html">IQ Test Page</a>
+, score 80% or above, and then share your Name, Institute Name, and Score Screenshot on WhatsApp at +91 9547394654.
+      </div>
+    </div>
+
+      <div class="faq-item">
+      <div class="faq-question">
+        <span>How often can I participate?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        👉 A new question set is available every Sunday. You can participate once per Sunday to qualify for a certificate.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Is there any fee for the certificate?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        👉 No, the certificate is completely free for participants who meet the score requirement.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>How will I receive my certificate?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        👉 Once your details (Your Full Name & Your Institute/College Name) and score screenshot are verified,
+        you will receive a digital certificate via WhatsApp.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Can I get multiple certificates?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        👉 Yes, since a new set is uploaded every Sunday, you can participate again and earn multiple certificates over time.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Is the certificate valid for my career/academics?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        👉 The certificate is an achievement certificate that highlights your participation and performance. 
+        It can be added to your resume, LinkedIn profile, or academic portfolio.
+      </div>
+    </div>
+
+      <div class="faq-item">
+      <div class="faq-question">
+        <span>What if I score less than 80%?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        👉 You will not be eligible for the certificate. But don’t worry – you can try again next Sunday with the new question set.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>How can I take the Typing Test?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        👉 Go to the Typing Test page from the navigation menu. Select a difficulty, start the timer, 
+        and type the displayed sentence. Results will show your speed and accuracy.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>Do you provide free resources?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        👉 Yes! We provide free tutorials, projects, and quizzes. You can also access our e-books 
+        and practice tests to strengthen your knowledge.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">
+        <span>How can I contact you?</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+      <div class="faq-answer">
+        👉 Visit our <a href="contact.html">Contact Page</a> where you will find a form, 
+        email address, phone number, and WhatsApp support link.
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer" style="margin-top: 40px;">
+    <div class="container">
+      <p>© <span id="year"></span> Happy Safar India</p>
+    </div>
+  </footer>
+
+  <!-- Accordion Script -->
+  <script>
+    document.querySelectorAll(".faq-question").forEach(button => {
+      button.addEventListener("click", () => {
+        const faqItem = button.parentElement;
+        faqItem.classList.toggle("active");
+      });
+    });
+  </script>
+</body>
+</html>

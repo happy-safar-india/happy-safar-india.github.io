@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Safar India — Blog</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="index.html">
+      <img src="assets/logo.png" alt="Logo" class="brand-logo" /> <!-- MODIFY HERE -->
+      <!-- <span class="brand-name">Happy Safar India</span>  -->
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
+    <nav id="nav" class="nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="pricing.html">Pricing</a>
+        <a class="active" href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container page">
+  <header class="page-header">
+    <h1>Technical Blog</h1>
+    <p><!-- MODIFY HERE --> Articles, tips, and deep dives on embedded topics.</p>
+  </header>
+
+  <section class="grid-3">
+    <article class="card post">
+      <img src="assets/sample.jpg" alt="Introduction to Embedded Electronics" /> <!-- MODIFY HERE -->
+      <h3>Introduction to Embedded Electronics: The Heart of Modern Devices</h3> <!-- MODIFY HERE -->
+      <p>Embedded electronics refers to specialized computing systems built into larger devices to perform dedicated tasks.</p>
+      <a class="btn small" href="embedded-electronics.html">Read More</a> <!-- MODIFY HERE -->
+    </article>
+
+    <article class="card post">
+      <img src="assets/sample.jpg" alt="What Are Embedded Systems?" /> <!-- MODIFY HERE -->
+      <h3>What Are Embedded Systems? Beginner’s Guide with Real-Life Examples</h3> <!-- MODIFY HERE -->
+      <p>Everywhere, from smart home devices to cars, we find systems that quietly perform tasks without drawing much attention.</p>
+      <a class="btn small" href="what-are-embedded-systems.html">Read More</a> <!-- MODIFY HERE -->
+    </article>
+
+    <article class="card post">
+      <img src="assets/sample.jpg" alt="PCB checklist" />
+      <h3>PCB Checklist: 10 Mistakes</h3>
+      <p>Silkscreen, clearances, decoupling — avoid common errors.</p>
+      <a class="btn small" href="blog-post-pcb-checklist.html">Read More</a> <!-- MODIFY HERE -->
+    </article>
+  </section>
+<!-- MODIFY HERE
+  <p class="muted"> Create one HTML per post (same header/footer) and link them here.</p>   -->
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Happy Safar India</p>
+  </div>
+</footer>
+</body>
+</html>

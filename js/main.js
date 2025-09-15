@@ -160,19 +160,3 @@
     });
     
 })(jQuery);
-
-<!-- Script for live date -->
-<script>
-    function updateDate() {
-        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        const today = new Date().toLocaleDateString(undefined, options);
-        document.getElementById("liveDate").textContent = today;
-    }
-
-    // Show date immediately when page loads
-    updateDate();
-
-    // Optional: refresh every 1 second (if you also add time later)
-    // setInterval(updateDate, 1000);
-</script>
-
